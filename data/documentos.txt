@@ -1,4 +1,110 @@
 La inteligencia artificial permite automatizar procesos complejos en ingeniería.
 La economía circular busca reducir el desperdicio a través del reciclaje.
 Un algoritmo es una secuencia finita de pasos que resuelve un problema.
-...
+Un transformador eléctrico es un dispositivo que transfiere energía eléctrica entre dos circuitos a través de inducción electromagnética.
+Los transformadores funcionan solamente con corriente alterna y no con corriente continua.
+La ley de Ohm establece que la corriente a través de un conductor entre dos puntos es directamente proporcional a la diferencia de potencial entre ellos.
+El teorema de Thevenin establece que cualquier red lineal de dos terminales puede ser reemplazada por un circuito equivalente formado por una fuente de voltaje en serie con una resistencia.
+La primera ley de Kirchhoff establece que la suma algebraica de las corrientes en un nodo es cero.
+La segunda ley de Kirchhoff establece que la suma algebraica de las diferencias de potencial en cualquier malla cerrada es cero.
+Un diodo es un componente electrónico de dos terminales que permite la circulación de la corriente eléctrica a través de él en un solo sentido.
+Un transistor es un dispositivo semiconductor que puede amplificar señales eléctricas y funcionar como interruptor.
+La ley de Faraday de inducción electromagnética establece que el voltaje inducido en un circuito cerrado es directamente proporcional a la tasa de cambio del flujo magnético que atraviesa el área limitada por el circuito.
+El efecto fotoeléctrico es la emisión de electrones de un material cuando se expone a la radiación electromagnética.
+La ley de Coulomb establece que la fuerza eléctrica entre dos cargas puntuales es directamente proporcional al producto de las cargas e inversamente proporcional al cuadrado de la distancia entre ellas.
+Un capacitor almacena energía eléctrica en un campo eléctrico.
+Un inductor almacena energía eléctrica en un campo magnético cuando la corriente eléctrica fluye a través de él.
+Una resistencia es un componente eléctrico diseñado para introducir una resistencia eléctrica en un circuito.
+Los circuitos RC (resistencia-capacitor) son circuitos eléctricos compuestos por resistencias y capacitores.
+Los circuitos RL (resistencia-inductor) son circuitos eléctricos compuestos por resistencias e inductores.
+Los circuitos RLC (resistencia-inductor-capacitor) son circuitos eléctricos que contienen resistencias, inductores y capacitores.
+La impedancia es una medida de la oposición que presenta un circuito a una corriente cuando se aplica un voltaje.
+La reactancia es la parte de la impedancia de un circuito eléctrico que es debida a capacitores e inductores.
+La resonancia ocurre en un circuito eléctrico cuando las reactancias inductiva y capacitiva son iguales en magnitud pero se cancelan mutuamente.
+Un transformador de corriente (TC) es un tipo de transformador que se utiliza para medir corrientes alternas.
+Un transformador de voltaje (TV) es un tipo de transformador que se utiliza para medir voltajes alternos.
+Un puente rectificador es un circuito electrónico que convierte corriente alterna en corriente continua.
+Un filtro es un circuito que elimina o atenúa ciertas frecuencias y permite el paso de otras.
+Un amplificador operacional es un dispositivo electrónico que amplifica la diferencia de voltaje entre sus entradas.
+La retroalimentación negativa es un mecanismo por el cual una porción de la salida de un sistema se redirige a la entrada, lo que puede mejorar la estabilidad y reducir el ruido.
+Un oscilador es un circuito electrónico que produce una señal periódica sin ninguna entrada externa.
+La modulación por amplitud (AM) es una técnica donde la amplitud de una onda portadora varía en proporción a la señal de información que se está transmitiendo.
+La modulación por frecuencia (FM) es una técnica donde la frecuencia de una onda portadora varía en proporción a la señal de información que se está transmitiendo.
+La modulación por fase (PM) es una técnica donde la fase de una onda portadora varía en proporción a la señal de información que se está transmitiendo.
+Un semiconductor es un material que tiene una conductividad eléctrica entre la de un conductor y un aislante.
+El dopaje es un proceso utilizado para alterar las propiedades eléctricas de un semiconductor mediante la adición de impurezas.
+Una unión p-n es una estructura fundamental dentro de los dispositivos semiconductores como diodos y transistores.
+Un MOSFET (Metal-Oxide-Semiconductor Field-Effect Transistor) es un tipo de transistor utilizado para amplificar o conmutar señales electrónicas.
+Un JFET (Junction Field-Effect Transistor) es un tipo de transistor de efecto de campo que utiliza una unión p-n para controlar la corriente eléctrica.
+La lógica digital es un sistema de representación de señales o datos en forma de valores discretos.
+Las compuertas lógicas son dispositivos que implementan funciones booleanas, produciendo una única salida lógica a partir de una o más entradas lógicas.
+La compuerta AND produce una salida verdadera solo cuando todas sus entradas son verdaderas.
+La compuerta OR produce una salida verdadera cuando al menos una de sus entradas es verdadera.
+La compuerta NOT invierte la entrada, produciendo una salida verdadera cuando la entrada es falsa y viceversa.
+Un flip-flop es un circuito digital que puede mantener uno de dos estados estables.
+Un registro es un conjunto de flip-flops que pueden almacenar múltiples bits de información.
+Un contador es un dispositivo digital secuencial que cuenta eventos que ocurren en secuencia.
+Un multiplexor es un dispositivo que selecciona una de varias entradas y la envía a una única salida.
+Un demultiplexor es un dispositivo que toma una única entrada y la dirige a una de varias salidas.
+Un codificador convierte información de un formato a otro para facilitar su transmisión o almacenamiento.
+Un decodificador convierte un código en un conjunto de señales para su posterior procesamiento.
+La ley de Moore establece que el número de transistores en un circuito integrado se duplica aproximadamente cada dos años.
+Una fuente de alimentación es un dispositivo que suministra energía eléctrica a uno o más dispositivos eléctricos.
+Un inversor de potencia es un dispositivo electrónico que convierte corriente continua (CC) en corriente alterna (CA).
+Una batería es un dispositivo que convierte energía química en energía eléctrica.
+Un generador eléctrico es una máquina que convierte energía mecánica en energía eléctrica.
+Un motor eléctrico es una máquina que convierte energía eléctrica en energía mecánica.
+Un microprocesador es un circuito integrado que contiene todas las funciones de una CPU.
+Un microcontrolador es un circuito integrado programable que contiene un procesador, memoria y periféricos de entrada/salida.
+La FPGA (Field-Programmable Gate Array) es un circuito integrado diseñado para ser configurado por el usuario después de su fabricación.
+La memoria RAM (Random Access Memory) es un tipo de memoria que permite acceder a cualquier ubicación de almacenamiento directamente.
+La memoria ROM (Read-Only Memory) es un tipo de memoria que permite solo la lectura de los datos almacenados.
+La memoria flash es un tipo de memoria no volátil que se puede borrar y reprogramar eléctricamente.
+Un convertidor analógico-digital (ADC) es un dispositivo que convierte una señal analógica en una señal digital.
+Un convertidor digital-analógico (DAC) es un dispositivo que convierte una señal digital en una señal analógica.
+La multiplexación por división de tiempo (TDM) es una técnica que permite la transmisión de múltiples señales a través de un solo canal.
+La multiplexación por división de frecuencia (FDM) es una técnica que permite la transmisión de múltiples señales a través de un solo canal mediante la asignación de diferentes frecuencias.
+La multiplexación por división de código (CDM) es una técnica que permite la transmisión de múltiples señales a través de un solo canal mediante la asignación de diferentes códigos.
+El ancho de banda es la diferencia entre las frecuencias más alta y más baja en una banda de frecuencias.
+La relación señal/ruido (SNR) es una medida que compara el nivel de una señal deseada con el nivel de ruido de fondo.
+La distorsión armónica total (THD) es una medida de la distorsión de una señal.
+La tasa de error de bit (BER) es la proporción de bits recibidos incorrectamente respecto al total de bits transmitidos.
+El teorema de muestreo de Nyquist-Shannon establece que, para reconstruir con precisión una señal continua a partir de sus muestras, la frecuencia de muestreo debe ser al menos el doble de la frecuencia más alta de la señal original.
+La cuantización es el proceso de mapear un conjunto grande de valores de entrada a un conjunto más pequeño de valores de salida.
+La codificación es el proceso de convertir datos en un formato que puede ser utilizado por un dispositivo de comunicación para la transmisión.
+La decodificación es el proceso de convertir datos codificados de vuelta a su formato original.
+La modulación digital es el proceso de convertir datos digitales en una señal analógica que pueda ser transmitida por un canal de comunicación.
+La demodulación digital es el proceso de recuperar la información original a partir de una señal modulada.
+El protocolo de comunicación es un conjunto de reglas que permiten la comunicación entre dispositivos.
+La comunicación serie es un método de transmisión de datos en el que se envía un bit a la vez a través de una línea de comunicación.
+La comunicación paralela es un método de transmisión de datos en el que se envían varios bits simultáneamente a través de múltiples líneas de comunicación.
+El aprendizaje automático es una rama de la inteligencia artificial que permite a los sistemas aprender a partir de datos.
+Las redes neuronales artificiales están inspiradas en la estructura del cerebro humano.
+Un perceptrón es el modelo más simple de una red neuronal artificial.
+El aprendizaje supervisado utiliza datos etiquetados para entrenar un modelo.
+El aprendizaje no supervisado busca patrones en datos sin etiquetas.
+Un clasificador toma decisiones asignando etiquetas a entradas desconocidas.
+Un árbol de decisión es un modelo predictivo que utiliza una estructura de árbol para tomar decisiones.
+El clustering agrupa elementos similares sin utilizar etiquetas predefinidas.
+El procesamiento del lenguaje natural permite a las computadoras interpretar y generar lenguaje humano.
+Un modelo de lenguaje predice la probabilidad de secuencias de palabras.
+La robótica combina mecánica, electrónica e informática para diseñar y construir robots.
+Un sensor ultrasónico mide distancias utilizando ondas de sonido de alta frecuencia.
+La automatización industrial reduce la intervención humana mediante sistemas de control automáticos.
+Un PLC (Controlador Lógico Programable) se utiliza para automatizar procesos industriales.
+El CAD (Diseño Asistido por Computadora) permite crear planos y modelos digitales de productos.
+La impresión 3D construye objetos tridimensionales a partir de modelos digitales.
+Un sistema embebido es un sistema informático dedicado a una función específica dentro de un dispositivo.
+La mecatrónica integra la ingeniería mecánica, electrónica, informática y de control.
+Un actuador convierte una señal de control en movimiento físico.
+El control PID se utiliza para ajustar variables en sistemas dinámicos.
+Un relé es un interruptor electromecánico que se activa mediante una corriente eléctrica.
+Una fotocelda es un sensor que detecta la luz ambiental.
+El efecto Hall se utiliza para medir campos magnéticos.
+Un circuito impreso (PCB) es una placa que conecta electrónicamente componentes mediante pistas conductoras.
+La tierra física es una conexión que proporciona un camino seguro para la corriente hacia el suelo.
+Un protocolo de red define las reglas para el intercambio de datos entre dispositivos.
+La dirección IP identifica de forma única a un dispositivo en una red.
+El modelo OSI es un marco conceptual que define las funciones de una red en siete capas.
+La capa de enlace de datos se encarga de la transmisión confiable entre nodos conectados directamente.
+La capa de transporte asegura la entrega completa y correcta de los datos.

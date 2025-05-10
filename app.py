@@ -1,49 +1,140 @@
 import streamlit as st
+from utils.embeddings import EmbeddingManager
+from utils.openai_utils import OpenAIResponseGenerator
 import os
 from dotenv import load_dotenv
-from pinecone import Pinecone
 
-# Cargar claves desde .env
+# Cargar variables de entorno
 load_dotenv()
 
-api_key = os.getenv("PINECONE_API_KEY")
-index_name = os.getenv("PINECONE_INDEX_NAME")
+# Configuración de la pagina
+st.set_page_config(
+    page_title="TechBrain - Asistente Técnico Avanzado",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
 
-# Inicializar cliente Pinecone
-pc = Pinecone(api_key=api_key)
-index = pc.Index(index_name)
+# Cargar estilos CSS
+def load_css(css_file):
+    with open(css_file, 'r') as f:
+        st.markdown(f'<style>{f.read()}</style>', unsafe_allow_html=True)
 
-# Título de la app
-st.set_page_config(page_title="Asistente Técnico", layout="centered")
-st.title("🤖 Asistente de Consulta Técnica")
+# Cargar archivo CSS
+css_path = os.path.join(os.path.dirname(__file__), "styles.css")
+if os.path.exists(css_path):
+    load_css(css_path)
+else:
+    st.warning("Archivo CSS no encontrado. Algunos estilos pueden no cargarse correctamente.")
 
-# Input del usuario
-pregunta = st.text_input("📥 Escribe tu pregunta:")
+# Inicializar componentes
+emb_manager = EmbeddingManager()
+openai_generator = OpenAIResponseGenerator()
+index = emb_manager.get_index()
 
-if pregunta:
-    with st.spinner("Buscando respuesta..."):
-        # Ejecutar búsqueda semántica
-        try:
-            results = index.search(
-                namespace="",
-                query={
-                    "top_k": 5,
-                    "inputs": {
-                        "text": pregunta
-                    }
-                }
-            )
+# Sidebar con opciones y branding
+with st.sidebar:
+        
+    # Opciones
+    st.subheader("⚙️ Configuración")
+    show_context = st.checkbox("Mostrar contexto utilizado", value=True)
+    show_scores = st.checkbox("Mostrar puntajes de relevancia", value=False)
+    
+    st.divider()
+    
+    # Sección para cargar nuevos documentos
+    st.subheader("📚 Añadir conocimiento")
+    uploaded_file = st.file_uploader(
+        "Sube un archivo (TXT o PDF)",
+        type=["txt", "pdf"],
+        accept_multiple_files=False
+    )
+    
+    if uploaded_file:
+        # Guardar archivo
+        save_path = os.path.join("data", "user_uploads", uploaded_file.name)
+        os.makedirs(os.path.dirname(save_path), exist_ok=True)
+        
+        with open(save_path, "wb") as f:
+            f.write(uploaded_file.getbuffer())
+        
+        st.success(f"Archivo {uploaded_file.name} guardado exitosamente.")
+        st.info("Ejecuta load_documents.py para procesar el nuevo conocimiento.")
+    
+    st.divider()
+    
 
-            # Mostrar resultados
-            st.subheader("📌 Resultados más relevantes:")
-            for hit in results["result"]["hits"]:
-                st.markdown(f"""
-                **ID:** {hit['_id']}  
-                **Score:** {round(hit['_score'], 4)}  
-                **Texto:** {hit['fields']['chunk_text']}  
-                **Categoría:** {hit['fields'].get('category', 'N/A')}  
-                ---
-                """)
+# Contenido principal
+col1, col2 = st.columns([2, 1])
 
-        except Exception as e:
-            st.error(f"❌ Error al buscar: {e}")
+with col1:
+    # Encabezado 
+    st.title("Asistente de Consulta Técnica")
+    st.markdown("""
+    <p style='font-size: 1.1rem; color: #97c1d1;'>
+    Puedes hacer preguntas sobre temas técnicos y el asistente buscará en la base de conocimientos
+    y generará una respuesta usando IA.
+    </p>
+    """, unsafe_allow_html=True)
+    
+    # Input
+    question = st.text_input(
+        "Escribe tu pregunta técnica:",
+        placeholder="Ej: ¿Cómo funciona un transformador eléctrico?"
+    )
+    
+    # Botón de búsqueda
+    search_button = st.button("🔍 Buscar respuesta", use_container_width=True)
+    
+    if question and search_button:
+        with st.spinner("Buscando respuesta..."):
+            try:
+                # 1. Obtener embedding de la pregunta
+                query_embedding = emb_manager.get_embedding(question)
+                
+                # 2. Buscar en Pinecone
+                results = index.query(
+                    vector=query_embedding,
+                    top_k=5,
+                    include_metadata=True
+                )
+                
+                # 3. Extraer textos relevantes
+                context_texts = [match.metadata["text"] for match in results.matches]
+                
+                # 4. Generar respuesta usando OpenAI
+                response = openai_generator.generate_response(question, context_texts)
+                
+                # 5. Mostrar respuesta principal primero
+                st.subheader("Respuesta:")
+                st.write(response)
+                
+                # 6. Mostrar contexto solo si está habilitado
+                if show_context:
+                    st.subheader("Contexto utilizado:")
+                    for i, (text, match) in enumerate(zip(context_texts, results.matches)):
+                        with st.expander(f"Contexto {i+1} (Score: {match.score:.2f})" if show_scores else f"Contexto {i+1}"):
+                            st.write(text)
+                
+            except Exception as e:
+                st.error(f"❌ Error al procesar la pregunta: {str(e)}")
+                st.exception(e)
+
+with col2:
+    # Twmas
+    st.markdown("### TEMAS DEL CONOCIMIENTO:")
+    
+    # IA y Computación
+    st.markdown("#### 🧠 Inteligencia Artificial y Computación")
+
+    # Ingeniería y Tecnología
+    st.markdown("#### 🔧 Ingeniería y Tecnología")
+
+    # Electrónica y Electricidad
+    st.markdown("#### ⚡ Electrónica y Electricidad")
+    
+    # Comunicaciones y Redes
+    st.markdown("#### 📡 Comunicaciones y Redes")
+
+
+# Pie de pagina
+st.markdown("Created by Isabella Obando & Mia Fuentes 2025")

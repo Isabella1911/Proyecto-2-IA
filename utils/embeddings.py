@@ -1,6 +1,6 @@
 import os
 from dotenv import load_dotenv
-from pinecone import Pinecone, ServerlessSpec  # Changed from PodSpec to ServerlessSpec
+from pinecone import Pinecone, ServerlessSpec  
 from langchain_openai import OpenAIEmbeddings
 
 # Cargar variables de entorno
@@ -31,7 +31,7 @@ class EmbeddingManager:
             # Configuración del índice usando ServerlessSpec para AWS
             spec = ServerlessSpec(
                 cloud="aws",
-                region="us-east-1"  # AWS us-east-1 region as recommended
+                region="us-east-1" 
             )
             
             self.pc.create_index(

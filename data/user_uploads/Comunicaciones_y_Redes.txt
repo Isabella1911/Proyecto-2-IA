@@ -1,3 +1,29 @@
 Comunicaciones y Redes
 
 Las comunicaciones y las redes son elementos fundamentales en la era digital actual. Las comunicaciones permiten la transmisión de información de un punto a otro, mientras que las redes proporcionan la infraestructura para que esa información fluya eficientemente. Las redes, especialmente las redes informáticas, hacen posible la conexión entre dispositivos, servidores y usuarios, facilitando la comunicación global a través de protocolos específicos. Las comunicaciones y redes están presentes en todos los aspectos de la vida cotidiana: en las redes sociales, en el correo electrónico, en las videollamadas, en los servicios de streaming y en el Internet de las cosas. La evolución de las comunicaciones, desde las señales analógicas hasta los protocolos digitales, ha sido posible gracias a los avances en redes cada vez más robustas y veloces.
+Una red de computadoras es un conjunto de dispositivos interconectados para compartir recursos e información.
+El modelo OSI divide la comunicación en 7 capas, desde la física hasta la aplicación.
+La capa de enlace de datos se encarga de la transmisión de tramas y el control de errores entre nodos conectados directamente.
+La dirección IP identifica de forma única un dispositivo en una red que utiliza el protocolo de internet.
+El protocolo TCP proporciona una comunicación confiable y orientada a la conexión entre dispositivos.
+El protocolo UDP ofrece una transmisión rápida pero sin garantía de entrega, útil en videollamadas y juegos en línea.
+El router es un dispositivo que dirige el tráfico entre redes diferentes usando direcciones IP.
+Un switch opera en la capa de enlace de datos, conectando dispositivos dentro de una misma red local.
+La fibra óptica transmite datos como pulsos de luz, permitiendo alta velocidad y largo alcance.
+El cableado estructurado organiza los cables de red de forma estandarizada en edificios para facilitar el mantenimiento.
+La red LAN conecta dispositivos dentro de un área local, como una casa o una oficina.
+La red WAN abarca un área geográfica extensa, como internet.
+La topología en estrella conecta todos los dispositivos a un nodo central, facilitando el diagnóstico de fallas.
+La topología en bus conecta todos los dispositivos a un solo canal compartido, pero tiene limitaciones en escalabilidad.
+El DNS (Sistema de Nombres de Dominio) traduce nombres de dominio legibles como google.com a direcciones IP.
+La máscara de subred define cuántos bits de una dirección IP corresponden a la red y cuántos al host.
+Una dirección MAC es un identificador único asignado a cada interfaz de red en hardware.
+El firewall controla el tráfico de red entrante y saliente para proteger contra accesos no autorizados.
+El protocolo HTTP es utilizado para la transferencia de páginas web entre servidores y clientes.
+El protocolo HTTPS añade una capa de seguridad mediante cifrado SSL/TLS sobre HTTP.
+El ping es una herramienta que verifica la conectividad entre dispositivos usando paquetes ICMP.
+La latencia es el tiempo que tarda un paquete en viajar de origen a destino.
+El ancho de banda se refiere a la cantidad de datos que pueden transmitirse en una red en un tiempo determinado.
+La interferencia electromagnética puede afectar las señales en redes cableadas y reducir su calidad.
+La VPN (Red Privada Virtual) crea una conexión segura y cifrada sobre una red pública como internet.
+

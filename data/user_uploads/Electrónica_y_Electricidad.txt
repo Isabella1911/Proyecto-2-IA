@@ -1,3 +1,29 @@
 Electrónica y Electricidad
 
 La electrónica y la electricidad son dos ramas fundamentales del conocimiento técnico y científico que están estrechamente relacionadas entre sí. La electricidad proporciona la energía necesaria para el funcionamiento de los dispositivos electrónicos, mientras que la electrónica utiliza esa energía para procesar información y controlar sistemas. La electricidad es la base del movimiento de cargas eléctricas, y sin ella, no podría existir la electrónica tal como la conocemos. Por otro lado, la electrónica permite la creación de circuitos complejos que manipulan señales eléctricas para realizar tareas específicas, como amplificar sonidos, procesar datos o transmitir información. La electrónica y la electricidad son esenciales para casi todas las tecnologías modernas: desde los teléfonos móviles hasta los sistemas de energía renovable.
+La corriente continua (DC) es aquella donde el flujo de electrones se mantiene en una sola dirección. Es común en baterías y sistemas de alimentación electrónica portátiles.
+La corriente alterna (AC) cambia de dirección periódicamente. Es utilizada en redes de distribución eléctrica debido a su eficiencia en largas distancias.
+Un resistor es un componente electrónico que limita la cantidad de corriente que puede fluir a través de un circuito.
+La ley de Ohm establece que la corriente eléctrica es directamente proporcional al voltaje e inversamente proporcional a la resistencia (V = IR).
+Los capacitores almacenan energía en forma de campo eléctrico y se utilizan en filtros, temporizadores y fuentes de poder.
+Un transistor puede actuar como interruptor o amplificador, y es el componente base de los circuitos digitales.
+La electrónica analógica trabaja con señales continuas, mientras que la digital utiliza señales discretas (0 y 1).
+El diodo es un componente que permite el paso de la corriente en una sola dirección. Es fundamental en la rectificación de corriente.
+Un multímetro es una herramienta que permite medir voltaje, corriente y resistencia, y es esencial en el diagnóstico de circuitos.
+La tierra física o puesta a tierra es una conexión directa con el suelo que protege a las personas y equipos de descargas eléctricas.
+La impedancia es una medida de oposición al paso de corriente alterna en un circuito, combinando resistencia y reactancia.
+La reactancia capacitiva disminuye con la frecuencia, lo que hace que los capacitores bloqueen señales de baja frecuencia.
+La reactancia inductiva aumenta con la frecuencia, por lo tanto, los inductores bloquean señales de alta frecuencia.
+El puente de Wheatstone se usa para medir resistencias desconocidas con gran precisión.
+El osciloscopio es un instrumento que permite visualizar señales eléctricas en forma de ondas en tiempo real.
+La fuente de alimentación conmutada (SMPS) convierte eficientemente energía eléctrica mediante el uso de transistores en alta frecuencia.
+Un circuito en paralelo permite que la corriente se divida entre múltiples caminos, manteniendo el mismo voltaje en cada componente.
+Un circuito en serie hace que la misma corriente fluya a través de todos los componentes conectados uno tras otro.
+Los sensores piezoeléctricos generan voltaje al ser comprimidos o deformados, y se usan en botones, alarmas y micrófonos.
+Los optoacopladores permiten transmitir señales entre dos partes de un circuito usando luz, manteniéndolas eléctricamente aisladas.
+El código de colores de resistencias permite identificar su valor nominal mediante bandas de colores estandarizadas.
+La soldadura por estaño se utiliza comúnmente en la construcción de circuitos para unir componentes de forma eléctrica y mecánica.
+La disipación de potencia en una resistencia se calcula como "𝑃=𝐼2𝑅P=I" 2R o "𝑃=𝑉2/𝑅" P=V 2/R.
+El efecto Joule describe cómo la energía eléctrica se convierte en calor al pasar por un conductor.
+Un relé es un interruptor electromecánico que permite controlar un circuito de alta potencia con una señal de baja potencia.
+

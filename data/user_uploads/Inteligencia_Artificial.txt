@@ -1,0 +1,20 @@
+La inteligencia artificial (IA) es una rama de la informática que busca crear sistemas capaces de realizar tareas que normalmente requieren inteligencia humana.
+El aprendizaje automático (Machine Learning) permite que los sistemas mejoren su desempeño a partir de datos sin ser programados explícitamente.
+Una red neuronal artificial es un modelo computacional inspirado en el cerebro humano, utilizado para tareas de clasificación y reconocimiento de patrones.
+Los algoritmos supervisados entrenan modelos usando datos etiquetados, lo que permite hacer predicciones sobre nuevos datos.
+Los algoritmos no supervisados descubren patrones ocultos en datos sin etiquetas, como en la agrupación (clustering).
+El aprendizaje profundo (Deep Learning) usa redes neuronales con múltiples capas para procesar grandes volúmenes de datos complejos.
+El procesamiento del lenguaje natural (NLP) permite a las máquinas entender, interpretar y generar lenguaje humano.
+Un bot conversacional (chatbot) es un programa de IA diseñado para simular una conversación con humanos a través de texto o voz.
+La visión por computadora permite a los sistemas interpretar y analizar imágenes o videos digitales.
+Un algoritmo genético es una técnica de optimización inspirada en la evolución biológica, útil para encontrar soluciones eficientes.
+El overfitting ocurre cuando un modelo aprende demasiado bien los datos de entrenamiento y falla al generalizar a nuevos datos.
+El preprocesamiento de datos incluye limpieza, normalización y transformación para mejorar el rendimiento del modelo.
+La computación en la nube permite ejecutar modelos de IA en servidores remotos con gran capacidad de cómputo.
+Los modelos generativos como GPT crean texto, imágenes o audio realistas a partir de datos de entrenamiento.
+El entrenamiento de modelos de IA puede requerir grandes cantidades de datos y potencia computacional especializada como GPUs.
+Un conjunto de datos (dataset) es una colección de ejemplos usada para entrenar y evaluar modelos de IA.
+El aprendizaje por refuerzo enseña a un agente a tomar decisiones mediante recompensas y penalizaciones en un entorno.
+La ética en IA aborda temas como la equidad, transparencia, privacidad y el uso responsable de algoritmos.
+La IA explicable (XAI) busca desarrollar sistemas de IA cuyos resultados puedan ser comprendidos por humanos.
+La computación cuántica promete acelerar ciertos algoritmos de IA gracias a su capacidad de procesar múltiples estados simultáneamente.
